@@ -2,8 +2,7 @@ page-login {
     img{
         margin: 0 auto;
         display: block;
-        width: 150px;
-        height: 100px;
+        width: 250px;
     }
     
     ion-card ion-row {
@@ -14,4 +13,7 @@ page-login {
             margin-right: 10px;
         }
     }
+    .center-align{
+        margin: 0 auto;
+    }   
 }

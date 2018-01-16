@@ -8,25 +8,30 @@
 
 
 <ion-content padding>
-
-  <img src="assets/imgs/logo.png" alt="Logo">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 col-sm-12 col-md-9 col-lg-6 col-xl-6  class="center-align">
+        <img src="assets/imgs/logo.png" alt="Logo">
+        <ion-card>
+          <ion-card-content>
+            <ion-item>
+              <ion-label floating>Username</ion-label>
+              <ion-input [(ngModel)]="username"  type="text"> </ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Password</ion-label>
+                <ion-input [(ngModel)]="password"  type="password"> </ion-input>
+              </ion-item>
+          </ion-card-content>
+          <ion-row>
+            <div>            
+                <button ion-button (click)="login()">Login</button>
+            </div>
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   
-    <ion-card>
-      <ion-card-content>
-        <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input [(ngModel)]="username"  type="text"> </ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-label floating>Password</ion-label>
-            <ion-input [(ngModel)]="password"  type="password"> </ion-input>
-          </ion-item>
-      </ion-card-content>
-      <ion-row>
-        <div>            
-            <button ion-button (click)="login()">Login</button>
-        </div>
-      </ion-row>
-    </ion-card>
 
 </ion-content>
